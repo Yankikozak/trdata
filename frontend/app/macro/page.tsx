@@ -1,0 +1,5 @@
+import StockSelector from "../components/StockSelector";
+
+export default function MacroPage() {
+  return <main className="shell"><div className="detail-wrap"><div className="detail-eyebrow mono">MAKRO VE EKONOMETRİ / TÜİK</div><div className="workspace-header"><div><h1>Makro görünüm</h1><p>Makro değişkenlerin seçili hisse ve sektör getirilerine etkisini incele.</p></div><StockSelector compact /></div><div className="workspace-grid"><div className="panel workspace-panel"><div className="mono muted-label">ANALİZ EVRENİ</div><h2>Hisse seçimi</h2><p className="muted-copy">Seçtiğin sembol korelasyon, Granger ve VAR modellerinin hedef serisi olur.</p><StockSelector /></div><div className="panel workspace-panel"><div className="mono muted-label">TÜİK VERİ DURUMU</div><h2>Resmi seri bağlantısı</h2><div className="provider-status"><span className="status-dot" /> TÜİK API anahtarı bekleniyor</div><p className="muted-copy">TUIK_API_KEY tanımlandığında enflasyon ve sektörel istatistikler provider adapter üzerinden alınır. Anahtar olmadan veri uydurulmaz.</p></div></div></div></main>;
+}
